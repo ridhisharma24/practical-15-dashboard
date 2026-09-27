@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <p class="tag">WEB DEVELOPMENT • PRACTICAL 15</p>
+
+            <h1>Student Performance Dashboard</h1>
+
+            <p>
+                Dynamic marks table and performance chart using JavaScript.
+            </p>
+        </header>
+
+
+        <!-- Student Details -->
+
+        <section class="card">
+
+            <h2>Student Details</h2>
+
+            <div class="details">
+
+                <div>
+                    <strong>Name</strong>
+                    <span>Ridhima Sharma</span>
+                </div>
+
+                <div>
+                    <strong>Semester</strong>
+                    <span>3rd Semester</span>
+                </div>
+
+                <div>
+                    <strong>Course</strong>
+                    <span>B.Tech CSE (AI/ML)</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Add Marks -->
+
+        <section class="card">
+
+            <h2>Add / Update Marks</h2>
+
+            <div class="form">
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Enter Subject"
+                >
+
+                <input
+                    type="number"
+                    id="marks"
+                    placeholder="Marks (0-30)"
+                    min="0"
+                    max="30"
+                >
+
+                <button onclick="addOrUpdate()">
+                    Add / Update
+                </button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- Marks Table -->
+
+        <section class="card">
+
+            <h2>Marks</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Percentage</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="marksTable">
+                </tbody>
+
+            </table>
+
+
+            <!-- Summary -->
+
+            <div class="summary">
+
+                <div>
+                    <span>Total</span>
+                    <strong id="total">0</strong>
+                </div>
+
+                <div>
+                    <span>Average</span>
+                    <strong id="average">0</strong>
+                </div>
+
+                <div>
+                    <span>Highest</span>
+                    <strong id="highest">0</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Chart -->
+
+        <section class="card chart-card">
+
+            <h2>Performance Chart</h2>
+
+            <canvas
+                id="chart"
+                width="800"
+                height="380">
+            </canvas>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
