@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    padding: 30px 15px;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    background: #111827;
+    color: white;
+    padding: 35px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    font-size: 34px;
+    margin: 8px 0;
+}
+
+
+.tag {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+
+/* Cards */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+.card h2 {
+    margin-bottom: 18px;
+}
+
+
+/* Student Details */
+
+.details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.details div {
+    background: #f3f4f6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.details strong,
+.details span {
+    display: block;
+}
+
+
+.details span {
+    margin-top: 6px;
+}
+
+
+/* Form */
+
+.form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+input,
+button {
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #d1d5db;
+
+    font-size: 15px;
+}
+
+
+input {
+    flex: 1;
+    min-width: 180px;
+}
+
+
+button {
+    background: #111827;
+
+    color: white;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+#message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 13px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    text-align: left;
+}
+
+
+th {
+    background: #f3f4f6;
+}
+
+
+/* Buttons */
+
+.delete-btn {
+    background: #dc2626;
+    padding: 7px 10px;
+}
+
+
+.edit-btn {
+    background: #374151;
+
+    padding: 7px 10px;
+
+    margin-right: 5px;
+}
+
+
+/* Summary */
+
+.summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.summary div {
+    padding: 18px;
+
+    background: #f3f4f6;
+
+    border-radius: 10px;
+}
+
+
+.summary span,
+.summary strong {
+    display: block;
+}
+
+
+.summary strong {
+    font-size: 25px;
+
+    margin-top: 5px;
+}
+
+
+/* Chart */
+
+.chart-card {
+    overflow-x: auto;
+}
+
+
+canvas {
+    width: 100%;
+
+    max-width: 800px;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .details,
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+}
